@@ -1,0 +1,11 @@
+title: "Sivani Pati – Supply Chain & Project Management"
+description: "Text-first portfolio showcasing supply chain transformation, project leadership, and product initiatives."
+theme: jekyll-theme-cayman
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+google_analytics: 
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
