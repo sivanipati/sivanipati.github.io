@@ -1,11 +1,33 @@
 title: "Sivani Pati – Supply Chain & Project Management"
 description: "Text-first portfolio showcasing supply chain transformation, project leadership, and product initiatives."
-theme: jekyll-theme-cayman
+url: "https://sivanipati.github.io"
+baseurl: ""
+
+# Build settings
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-google_analytics: 
+  syntax_highlighter: rouge
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Include all markdown files for processing
+include:
+  - "*.md"
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - example-content.md

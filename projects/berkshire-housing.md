@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: project
 title: "Berkshire Hathaway – Predictive Housing Model"
+description: "Case study: Predictive housing model and dashboard for Berkshire Hathaway using data analysis and modeling."
 ---
 
 # Berkshire Hathaway – Predictive Housing Model
@@ -20,4 +21,6 @@ Brokers needed faster, more reliable market signals for planning and outreach.
 - Accelerated market analysis; reduced manual research time by **~30%**.  
 - Standardized dashboard adopted for ongoing use.  
 
+<div class="skills">
 **Skills**: Data Analysis, Predictive Modeling, Dashboarding, Stakeholder Enablement.
+</div>

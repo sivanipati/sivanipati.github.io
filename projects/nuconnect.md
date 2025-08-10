@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: project
 title: "NUConnect – Agile Lean MVP"
+description: "Case study: MVP definition and validation for NUConnect university event platform using agile/lean methodology."
 ---
 
 # NUConnect – Agile Lean MVP for University Events
@@ -20,4 +21,6 @@ Fragmented event communication led to missed opportunities and low engagement.
 - Reduced event discovery steps by **~50%** and clarified roadmap for enhancements.  
 - Established metrics instrumentation plan to track adoption post-launch.  
 
+<div class="skills">
 **Skills**: Agile/Lean PM, User Research, MVP Definition, Metrics, Wireframing.
+</div>

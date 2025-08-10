@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: project
 title: "Diversity Connected – CRM Implementation"
+description: "Case study: CRM implementation with risk management and stakeholder engagement for Diversity Connected."
 ---
 
 # Diversity Connected – CRM Implementation
@@ -20,4 +21,6 @@ Launch a CRM without disrupting ongoing programs while de-risking technical and 
 - Risk framework adopted for subsequent projects; anticipated onboarding risks reduced **~40%**.  
 - Clear governance and communication cadence improved cross-functional velocity.  
 
+<div class="skills">
 **Skills**: Risk Management, Stakeholder Engagement, Process Analysis, Project Documentation.
+</div>

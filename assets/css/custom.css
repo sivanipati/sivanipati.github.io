@@ -1,51 +1,417 @@
-/* Text-first, clean palette */
+/* Root Variables - Personal Theme Inspired */
 :root {
-  --accent: #1F3B4D;
+    --primary-color: #2c3e50;      /* Dark blue-gray - main text */
+    --secondary-color: #7f8c8d;    /* Medium gray - secondary text */
+    --accent-color: #3498db;       /* Blue - links and highlights */
+    --background-color: #ffffff;   /* Pure white - main background */
+    --text-color: #2c3e50;
+    --border-color: #ecf0f1;       /* Light gray - borders */
+    --hover-color: #f8f9fa;        /* Very light gray - hover states */
+    --muted-color: #95a5a6;        /* Muted gray for subtle elements */
 }
-.page-header {
-  background-color: #ffffff !important;
-  background-image: none !important;
-  padding: 2rem 0 1rem 0;
-  border-bottom: 1px solid #eee;
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.project-tagline {
-  color: #4A5B68 !important;
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-h1, h2, h3, h4 {
-  color: #1F3B4D;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
-a {
-  color: var(--accent);
+
+/* Header and Navigation */
+.header {
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 4rem;
 }
-.btn {
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  background: transparent;
-}
-.btn:hover {
-  background: var(--accent);
-  color: #fff;
-}
-footer {
-  border-top: 1px solid #eee;
-  padding-top: 1rem;
-}
-/* Make content narrower for readability */
-.main-content {
-  max-width: 860px;
-  margin: 0 auto;
-}
-/* Simple nav links under the header title */
+
 .nav-links {
-  margin-top: .5rem;
+    margin-bottom: 2rem;
 }
+
 .nav-links a {
-  margin-right: 14px;
-  text-decoration: none;
-  font-weight: 600;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--secondary-color);
+    transition: color 0.2s ease;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-/* Metric cards */
-.metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin: 1rem 0 2rem 0; }
-.metric { border: 1px solid #eee; border-radius: 12px; padding: 16px; text-align: center; }
-.metric .num { font-size: 28px; font-weight: 800; color: #1F3B4D; }
-.metric .label { color: #4A5B68; }
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Content Styles for Markdown */
+.main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.main-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 3rem 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.main-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 2rem 0 1rem 0;
+}
+
+.main-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+.main-content ul, .main-content ol {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.main-content li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.main-content strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.main-content a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.main-content a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.main-content hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 3rem 0;
+}
+
+/* Project Cards Styling */
+.project-section {
+    margin: 3rem 0;
+}
+
+.project-card {
+    background: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-color);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-color: var(--accent-color);
+}
+
+.project-card:hover::before {
+    transform: scaleY(1);
+}
+
+.project-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.project-card p {
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.project-outcome {
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: var(--hover-color);
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.project-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--primary-color);
+}
+
+.project-link::after {
+    content: '→';
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.project-link:hover::after {
+    transform: translateX(4px);
+}
+
+/* Table Styling */
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: var(--background-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-content th {
+    background: var(--hover-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.main-content td {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--secondary-color);
+}
+
+.main-content tr:hover {
+    background: var(--hover-color);
+}
+
+/* Hero Links Styling */
+.hero-links {
+    margin-top: 2rem;
+}
+
+.hero-links a {
+    display: inline-block;
+    margin: 0 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.hero-links a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 3rem 0;
+    background: var(--hover-color);
+    border-radius: 8px;
+    margin-top: 4rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.contact-section strong {
+    color: var(--primary-color);
+}
+
+/* Back Link */
+.back-link {
+    margin-bottom: 2rem;
+}
+
+.back-link a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+    color: var(--primary-color);
+}
+
+.back-link a::before {
+    content: '←';
+    margin-right: 0.5rem;
+}
+
+/* Skills Section */
+.skills {
+    background: var(--hover-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-top: 2rem;
+    text-align: center;
+    border-left: 4px solid var(--accent-color);
+}
+
+.skills strong {
+    color: var(--primary-color);
+}
+
+/* Stock Images Styling */
+.stock-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 1rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.stock-image-small {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+}
+
+.stock-image-large {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .main-content h1 {
+        font-size: 2rem;
+    }
+
+    .main-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .main-content p, .main-content li {
+        font-size: 1rem;
+    }
+
+    .nav-links a {
+        margin: 0 0.75rem;
+        font-size: 0.85rem;
+    }
+
+    .main-content table {
+        font-size: 0.9rem;
+    }
+
+    .main-content th,
+    .main-content td {
+        padding: 0.75rem 0.5rem;
+    }
+}

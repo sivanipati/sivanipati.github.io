@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: project
 title: "Aspiring Product Managers Club (APMC) Leadership"
+description: "Case study: Founded and led APMC community for aspiring product managers with workshops and mentorship programs."
 ---
 
 # Aspiring Product Managers Club (APMC) Leadership
@@ -22,4 +23,6 @@ Seattle lacked a structured community for aspiring PMs to access targeted learni
 - Helped members secure internships and job offers through workshops and mentorship connections.  
 - Created a sustainable framework for ongoing events and knowledge-sharing.
 
+<div class="skills">
 **Skills**: Community Building, Event Management, Workshop Design, Stakeholder Engagement.
+</div>
